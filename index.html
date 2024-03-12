@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3Schools Editor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link id="stylesheet" rel="stylesheet" href="light.css">
+    
+</head>
+<body>
+    <header class="bg-success">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="list-inline topnavleft">
+                        <li class="list-inline-item"><a href="https://www.w3schools.com/"><img src="images/home.png" alt="Home"></a></li>
+                        <li class="list-inline-item dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/menu.png" alt="Menu">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Save</a>
+                                <a class="dropdown-item" href="#">Refresh</a>
+                                <a class="dropdown-item" href="#">Dark mode</a>
+                            </div>
+                        </li>
+
+                        <li class="list-inline-item"><a href="#"><img src="images/diskette.png" alt="Diskette" onclick="save()"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="images/refresh.png" alt="Refresh" onclick="refreshPage()"></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="images/dark-mode.png" alt="Dark Mode" onclick="toggleDarkMode()"></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary topnavmid" onclick="runCode()">Run</button>
+                </div>
+                
+                <div class="col-md-4" style="margin-left: 190px;">
+                    <a href="https://www.w3schools.com/spaces/index.php" class="btn btn-primary topnavright">Get Your Own Website</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <textarea class="editor form-control" id="code" style="height: 400px;"></textarea>
+            </div>
+            <div class="col-md-6">
+                <div class="output" id="output"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Dark background */
+    color: #f8f9fa; /* Light text */
+}
+
+header {
+    background-color: #333; /* Dark header background */
+    color: #f8f9fa; /* Light text */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.topnavleft {
+    display: flex;
+}
+
+.topnavleft li {
+    list-style: none;
+    padding-right: 35px;
+}
+
+.topnavleft img {
+    height: 30px;
+}
+
+.topnavmid button {
+    border-radius: 20px;
+    background-color: #007bff; /* Blue button background */
+    color: #f8f9fa; /* Light text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.topnavright a {
+    text-decoration: none;
+}
+
+.topnavright button {
+    border-radius: 20px;
+    background-color: #007bff; /* Blue button background */
+    color: #f8f9fa; /* Light text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.editor {
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-family: Consolas, Menlo, monospace;
+    background-color: #222; /* Darker background for editor */
+    color: #f8f9fa; /* Light text */
+}
+
+.output {
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #222; /* Darker background for output */
+    color: #f8f9fa; /* Light text */
+}
